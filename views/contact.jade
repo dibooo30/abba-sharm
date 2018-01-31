@@ -1,0 +1,44 @@
+extends layout
+
+block content
+
+    h2.brand.text-capitalize contact me
+    .wrapper.animated.bounceInLeft
+        .contact-info.text-left
+            ul.contact-ul
+                li  
+                   i.fa.fa-road 
+                   | => 44 nemabay sharm el shaikh
+                li
+                    i.fa.fa-phone
+                    | => (555) 555-5555
+                li
+                    i.fa.fa-envelope
+                    | => test@acme.test
+                
+            .text-center.medea-info
+                h3.text-left folow us
+                a.face(href='#')
+                    i.fab.fa-facebook.fa-2x
+                a.googel-plus(href='#')
+                    i.fab.fa-google-plus.fa-2x
+                a.twet(href='#')
+                    i.fab.fa-twitter.fa-2x
+                a.linked(href='#')
+                    i.fab.fa-linkedin.fa-2x
+                a.you(href='#')
+                    i.fab.fa-youtube.fa-2x
+        .contact
+            h3 Email Us
+            form(method='POST', action='send')
+                p.full
+                    label Name
+                    input(type='text', name='name', placeholder='Name')
+                p.full
+                    label Email Address
+                    input(type='email', name='email', placeholder='Email')
+                p.full
+                    label Message
+                    textarea(name='message', rows='5', placeholder='Message')
+                p.full
+                    button.btn.btn-dark(type='submit') Send

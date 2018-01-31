@@ -1,0 +1,40 @@
+extends ../layout
+block content
+    include trepes-nav
+    h3.h1 sea tripse
+    .row
+        .col-lg-4
+            .card
+                img.card-img-top(src='#{data[1].cardimg}', alt='#{data[1].cardimg}')
+                .card-body
+                    h5.card-title #{data[1].cardtitle}
+                    p.card-text #{data[1].cardSmallp}
+                    a.btn.btn-primary(href='#{data[1].cardLink}', class="float-right") see more
+        .col-lg-4
+            .card
+                img.card-img-top(src='#{data[3].cardimg}', alt='#{data[3].cardimg}')
+                .card-body
+                    h5.card-title #{data[3].cardtitle}
+                    p.card-text #{data[3].cardSmallp}
+                    a.btn.btn-primary(href='#{data[3].cardLink}', class="float-right") see more
+        .col-lg-4
+            .card
+                img.card-img-top(src='#{data[6].cardimg}', alt='#{data[6].cardimg}')
+                .card-body
+                    h5.card-title #{data[6].cardtitle}
+                    p.card-text #{data[6].cardSmallp}
+                    a.btn.btn-primary(href='#{data[6].cardLink}', class="float-right") see more
+        .col-lg-4
+            .card
+                img.card-img-top(src='#{data[7].cardimg}', alt='#{data[7].cardimg}')
+                .card-body
+                    h5.card-title #{data[7].cardtitle}
+                    p.card-text #{data[7].cardSmallp}
+                    a.btn.btn-primary(href='#{data[7].cardLink}', class="float-right") see more
+        .col-lg-4
+            .card
+                img.card-img-top(src='#{data[8].cardimg}', alt='#{data[8].cardimg}')
+                .card-body
+                    h5.card-title #{data[8].cardtitle}
+                    p.card-text #{data[8].cardSmallp}
+                    a.btn.btn-primary(href='#{data[8].cardLink}', class="float-right") see more

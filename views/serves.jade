@@ -1,0 +1,22 @@
+extends layout
+
+block content
+
+    .serves
+        .row.info
+            .col-lg-4.col-md-6
+                a.nav-item.btn.bg-success(href='/ourserves/sea-tripes') sea ​​tripes
+            .col-lg-4.col-md-6
+                a.nav-item.btn.bg-success(href='/ourserves/cultural-tripes') Cultural trips
+            .col-lg-4.col-md-6
+                a.nav-item.btn.bg-success(href='/ourserves/inside-city') Inside City
+        .row
+         - each item in data
+            .col-md-6.col-lg-4
+                .card
+                    img.card-img-top(src='#{item.cardimg}', alt='')
+                    .card-body
+                        h5.card-title #{item.cardtitle}
+                        p.card-text #{item.cardSmallp}
+                        a.btn.btn-primary(href='#{item.cardLink}', class="float-right") see more
+            

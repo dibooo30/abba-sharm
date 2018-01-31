@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+    .alkalaa
+        h3.h1 #{data[5].cardtitle}
+        .row
+            .col-lg-7.col-md-6
+                p #{data[5].cardp}
+            .col-lg-5.col-md-5
+                img(src="#{data[5].cardimg}", alt=" #{data[5].cardimg}", style='width:100%')
+                div.price #{data[5].cardPrice}
+                        

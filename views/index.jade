@@ -1,0 +1,16 @@
+extends layout
+
+block content
+
+    h1 Excertion
+    .cardes
+      .row
+        - each item in data
+            .col-md-6.col-lg-4
+              .card
+                img.card-img-top(src='#{item.cardimg}', alt='')
+                .card-body
+                  h5.card-title #{item.cardtitle}
+                  p.card-text #{item.cardSmallp}
+                  a.btn.btn-primary(href='#{item.cardLink}', class="float-right") see more
+                

@@ -1,0 +1,30 @@
+extends layout
+
+block content
+    .promotion
+        h2.h1 pormotion
+        .row
+            .col-md-6.col-lg-3(style="background: url(' #{data[7].cardimg} '); ")
+                .prom1
+                   a(href='#{data[7].cardLink}')
+                    .overlay
+                        .tr
+                            p(style='text-decoration: line-through') 40 $
+                            p 35 $
+                            h4 #{data[7].cardtitle}
+            .col-md-6.col-lg-3(style="background: url(' #{data[3].cardimg} '); ")
+                .prom1
+                   a(href='#{data[3].cardLink}')
+                    .overlay
+                        .tr
+                            p(style='text-decoration: line-through') 40 $
+                            p 35 $
+                            h4 #{data[3].cardtitle}
+            .col-md-6.col-lg-3(style="background: url(' #{data[5].cardimg} '); ")
+                .prom1
+                   a(href='#{data[5].cardLink}')
+                    .overlay
+                        .tr
+                            p(style='text-decoration: line-through') 40 $
+                            p 35 $
+                            h4 #{data[5].cardtitle}

@@ -1,0 +1,20 @@
+extends ../layout
+
+block content
+    include trepes-nav
+    h3.h1 sea tripse
+    .row
+        .col-lg-4
+            .card
+                img.card-img-top(src='#{data[5].cardimg}', alt='#{data[5].cardimg}')
+                .card-body
+                    h5.card-title #{data[5].cardtitle}
+                    p.card-text #{data[5].cardSmallp}
+                    a.btn.btn-primary(href='#{data[5].cardLink}', class="float-right") see more
+        .col-lg-4
+            .card
+                img.card-img-top(src='#{data[8].cardimg}', alt='#{data[8].cardimg}')
+                .card-body
+                    h5.card-title #{data[8].cardtitle}
+                    p.card-text #{data[8].cardSmallp}
+                    a.btn.btn-primary(href='#{data[8].cardLink}', class="float-right") see more
